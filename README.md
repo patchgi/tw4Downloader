@@ -1,4 +1,4 @@
-#twDownloader 
+#tw4Downloader 
 http://sai-zen-sen.jp/comics/twi4/ からほしいマンガだけダウンロードするスクリプト
 
 
