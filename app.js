@@ -6,7 +6,7 @@ var request = require('request');
 var fs = require('fs');
 
 //ダウンロードするページ数
-var MAX_PAGE = 197;
+var MAX_PAGE = 0;
 
 var para = {};
 var src;
@@ -15,9 +15,9 @@ var answer;
 //==========================================================================================
 
 //使用例
-for (var i = 1; i <= MAX_PAGE; i++) {
-	fetchComic('tomochan', i,'C:/Users/Patchgi/Documents/tw4Downloader');
-}
+// for (var i = 1; i <= MAX_PAGE; i++) {
+// 	fetchComic('tomotuku', i,'C:/.......'(pathを入力));
+// }
 
 //0埋め関数
 function nf(_num) {
