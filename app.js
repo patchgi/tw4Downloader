@@ -15,7 +15,7 @@ var answer;
 //==========================================================================================
 
 //使用例
-<<<<<<< HEAD
+
 // for (var i = 1; i <= MAX_PAGE; i++) {
 // 	fetchComic('tomotuku', i,'C:/.......'(pathを入力));
 // }
@@ -23,7 +23,7 @@ var answer;
 //for (var i = 1; i <= MAX_PAGE; i++) {
 //	fetchComic('tomochan', i,'C:/Users/Patchgi/Documents/tw4Downloader');
 //}
->>>>>>> 7f592abf99b999387f68a0d1f1c8c069991aac3c
+
 
 //0埋め関数
 function nf(_num) {
