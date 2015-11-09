@@ -6,7 +6,7 @@ var request = require('request');
 var fs = require('fs');
 
 //ダウンロードするページ数
-var MAX_PAGE = 0;
+var MAX_PAGE = 201;
 
 var para = {};
 var src;
@@ -15,21 +15,11 @@ var answer;
 //==========================================================================================
 
 //使用例
-<<<<<<< HEAD
-// for (var i = 1; i <= MAX_PAGE; i++) {
-// 	fetchComic('tomotuku', i,'C:/.......'(pathを入力));
-// }
-=======
 
-// for (var i = 1; i <= MAX_PAGE; i++) {
-// 	fetchComic('tomotuku', i,'C:/.......'(pathを入力));
-// }
-=======
-//for (var i = 1; i <= MAX_PAGE; i++) {
-//	fetchComic('tomochan', i,'C:/Users/Patchgi/Documents/tw4Downloader');
-//}
+for (var i = 1; i <= MAX_PAGE; i++) {
+	fetchComic('tomochan', i,'/Users/Patchgi/workspace/tw4Downloader');
+}
 
->>>>>>> 30ef97791beba000741a4cc5e1f01fb8aee37999
 
 //0埋め関数
 function nf(_num) {
@@ -71,10 +61,11 @@ function fetchComic(_comicName, _fileCount, _path) {
 			answer = URL.resolve(url, src);
 			urlList.push(answer);
 		});
+		
 		request(
 			{
 				method: 'GET',
-				url: urlList[1],
+				url: urlList[2],
 				encoding: null
 			},
 			function (error, responce, body) {
