@@ -6,8 +6,9 @@ var request = require('request');
 var fs = require('fs');
 
 //ダウンロードするページ数
-var MAX_PAGE = 201;
+var MAX_PAGE = 202;
 
+var pageFeature=2;
 var para = {};
 var src;
 var answer;
@@ -65,7 +66,7 @@ function fetchComic(_comicName, _fileCount, _path) {
 		request(
 			{
 				method: 'GET',
-				url: urlList[2],
+				url: urlList[pageFeature],
 				encoding: null
 			},
 			function (error, responce, body) {
