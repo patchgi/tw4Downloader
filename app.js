@@ -72,7 +72,7 @@ function fetchComic(_comicName, _fileCount, _path) {
 			function (error, responce, body) {
 				fs.writeFileSync(_path+"/"+_comicName + "/" + nf(_fileCount) + ".png", body, 'binary');
 			}
-			);
+		);
 	})
 
 }
